@@ -67,7 +67,7 @@ public with sharing class IntegrationHealthController {
     }
     
     /*  Fetches data from Tooling API and creates Integration_Statuses__c record    */
-  /*  @AuraEnabled
+    @AuraEnabled
     public static void fetchToolingDataAndCreateRecords() {
         // HTTP callout
         HttpRequest req = new HttpRequest();
@@ -107,9 +107,10 @@ public with sharing class IntegrationHealthController {
             insert toInsert;
             System.debug('Created ' + toInsert.size() + ' Integration_Statuses__c records.');
         }
-    } */
-   
-    @AuraEnabled
+    } 
+
+/*   Fetches data from Tooling API and creates Integration_Statuses__c record    */
+  /*  @AuraEnabled
     public static void fetchMetadataAndCreateRecords() {
         List<Integration_Statuses__c> recordsToInsert = new List<Integration_Statuses__c>();
 
@@ -160,5 +161,5 @@ public with sharing class IntegrationHealthController {
             insert recordsToInsert;
             System.debug('Created ' + recordsToInsert.size() + ' Integration_Statuses__c records.');
         }
-    }
-}
+    }  */
+ }
